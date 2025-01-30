@@ -132,5 +132,44 @@
     <footer class="footer">
       <p>&copy; 2025 The Beatles lab</p>
     </footer>
+
+    <script>
+      // Función para mostrar el video y ocultar los demás
+      function toggleVideo(buttonId, videoId) {
+        const videoElement = document.getElementById(videoId); // Obtener el video
+        const allVideos = document.querySelectorAll(".video"); // Obtener todos los videos
+
+        // Ocultar todos los videos
+        allVideos.forEach((video) => (video.style.display = "none"));
+
+        // Mostrar el video correspondiente
+        videoElement.style.display = "block";
+      }
+
+      // Asignar el evento click a cada botón de reproducción
+      document
+        .getElementById("play_hey")
+        .addEventListener("click", function () {
+          toggleVideo("play_hey", "video_hey");
+        });
+
+      document
+        .getElementById("play_yesterday")
+        .addEventListener("click", function () {
+          toggleVideo("play_yesterday", "video_yesterday");
+        });
+
+      document
+        .getElementById("play_let")
+        .addEventListener("click", function () {
+          toggleVideo("play_let", "video_let");
+        });
+
+      document
+        .getElementById("play_yellow")
+        .addEventListener("click", function () {
+          toggleVideo("play_yellow", "video_yellow");
+        });
+    </script>
   </body>
 </html>
