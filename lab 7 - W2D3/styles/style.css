@@ -359,7 +359,7 @@ footer {
 }
 
 .fas.fa-play {
-  font-size: 60px;
+  font-size: 50px;
   color: rgba(255, 0, 0, 0.767);
   cursor: pointer;
 }
@@ -368,7 +368,7 @@ footer {
   min-height: 90vh;
 }
 
-#videos_section {
+#music_section {
   margin-bottom: 20px;
   text-align: justify;
   word-spacing: 5px;
