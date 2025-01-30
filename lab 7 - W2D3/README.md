@@ -10,3 +10,6 @@
 
 - En tu listado de cantantes, añade un enlace a un VIDEO y un enlace a un AUDIO, parecido a la imagen de muestra.
 - Encuentra cómo añadir iconos en tu HTML! Ejemplo inserción AUDIO y VIDEO en tu página.
+  ![alt text](image.png)
+- Vamos a probar a hacerlo en grupos aleatorios (salas de Zoom). La idea es compartir.
+- No podéis consultar con el profesor sobre este ejercicio hasta después del primer descanso
