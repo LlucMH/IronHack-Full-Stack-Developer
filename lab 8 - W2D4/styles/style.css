@@ -34,6 +34,7 @@ h1 {
   font-size: 9em;
   text-align: center;
   text-transform: uppercase;
+  position: relative;
 }
 
 h2 {
@@ -41,6 +42,10 @@ h2 {
   text-align: center;
   text-transform: uppercase;
   line-height: 4em;
+  position: absolute;
+  top: 70px;
+  left: 49%;
+  transform: translateX(-50%);
 }
 
 h3 {
@@ -62,12 +67,24 @@ h5 {
 
 .nav-bar {
   background-color: var(--dark-blue);
+  padding: 10px 20px;
+  display: flex;
+  justify-content: center;
 }
 
 .nav-bar a {
   color: white;
   text-decoration: none;
   font-size: 2em;
+}
+
+.nav-bar ul {
+  display: flex;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  justify-content: center;
+  gap: 15vw;
 }
 
 .header {
@@ -85,11 +102,29 @@ h5 {
 
 .quote {
   font-size: 2.5em;
+  margin-top: 250px;
+  margin-left: 10vw;
 }
 
 .dark-background {
   background-color: var(--dark-blue);
   color: white;
+}
+
+#general-information {
+  display: flex;
+  justify-content: center;
+  gap: 5vw;
+  padding: 50px 15vw;
+}
+
+.general-information-article {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  gap: 15px;
 }
 
 .text {
@@ -106,25 +141,71 @@ h5 {
   letter-spacing: 0.5px;
   text-align: center;
   text-decoration: none;
+  width: 180px;
+  height: 2.5em;
+  padding: 0;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 20px;
+}
+
+#structure {
+  margin: 7em;
+}
+
+.service-box-container {
+  margin-top: 5em;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* 2 columnas */
+  gap: 50px 130px;
+  margin-left: 200px;
+  margin-right: 200px;
+  margin-bottom: 100px;
 }
 
 .service-box {
   font-size: 1.7em;
   text-align: center;
+  padding: 20px;
+  border-radius: 8px; /* Borde redondeado */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Sombra suave */
 }
 
 .service-box img {
   width: 125px;
 }
 
+#team {
+  padding: 5rem;
+}
+
 #team .section-text {
   font-size: 1.9em;
   text-align: center;
+  padding-left: 30%;
+  padding-right: 30%;
+}
+
+.horizontal-line {
+  width: 390px;
+  border: none;
+  border-top: 1px solid white;
+  margin: 20px auto;
+}
+
+.members-container {
+  display: flex;
+  justify-content: center;
+  gap: 70px;
 }
 
 #team .member-name {
   font-size: 1.5em;
   font-weight: 700;
+  text-align: center;
+  margin: 20px 10px 10px 10px;
 }
 
 #team img {
@@ -132,14 +213,73 @@ h5 {
   height: 180px;
 }
 
+#schedule {
+  padding: 5rem;
+}
+
+.schedule-table {
+  text-align: center;
+  margin: auto;
+  display: table;
+  border-collapse: collapse;
+  width: 40%;
+  margin-bottom: 30px;
+}
+
+.schedule-table tr {
+  border-bottom: 1px solid;
+}
+
+.schedule-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.form-title {
+  text-align: center;
+  font-size: 1.2em;
+  line-height: 3em;
+}
+
+.form-box {
+  width: 390px;
+  border: 0.2px solid grey;
+  border-radius: 2px;
+}
+
+.schedule-btn {
+  width: 100px;
+  border: 1px solid black;
+  margin-top: 20px;
+  text-align: center;
+  color: black;
+  text-decoration: none;
+}
+
 .footer {
   text-align: center;
   font-size: 1.9em;
+  display: flex;
+  align-items: center;
+  gap: 5vw;
+  flex-wrap: wrap;
+  padding: 50px 100px 50px 100px;
+  justify-content: flex-end;
+  flex-direction: row;
+  align-content: space-around;
+}
+
+.footer section {
+  display: flex;
+  flex-direction: column;
 }
 
 .address {
   font-style: normal;
   font-size: 0.8em;
+  margin-bottom: 40px;
 }
 
 .footer a {
@@ -149,4 +289,9 @@ h5 {
 
 .footer ul {
   list-style: none;
+}
+
+.footer-map {
+  height: 20vw;
+  width: 60vw;
 }
