@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>About Luffy</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      body {
+        font-family: "Poppins", sans-serif;
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        text-align: center;
+      }
+      h1 {
+        font-weight: 700;
+      }
+      p {
+        font-weight: 400;
+      }
+      .header {
+        background: linear-gradient(
+          90deg,
+          rgba(195, 46, 27, 1) 0%,
+          rgba(105, 5, 0, 1) 50%,
+          rgba(255, 0, 31, 1) 100%
+        );
+        color: white;
+        padding: 20px;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
+        height: 150px;
+        display: flex;
+        gap: 30px;
+        justify-content: center;
+      }
+      .header img {
+        height: 130px;
+      }
+      .hi-text {
+        margin: 5%;
+      }
+      .hobbies-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+        flex-wrap: wrap;
+        margin: 20px;
+        margin-bottom: 70px;
+      }
+      .hobby {
+        width: 250px;
+        height: 300px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px,
+          rgba(0, 0, 0, 0.3) 0px 7px 13px -3px,
+          rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+        transition: transform 0.3s ease-in-out;
+      }
+      .hobby:hover {
+        transform: translateY(10px);
+      }
+      .hobby img {
+        height: 200px;
+        width: 200px;
+        object-fit: cover;
+        border-radius: 50%;
+        margin-bottom: 30px;
+      }
+      .straw-hat-pirates {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        margin: 20px;
+      }
+      .nakamas-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+        flex-wrap: wrap;
+        margin: 20px;
+      }
+      .nakama {
+        width: 150px;
+        padding: 10px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+      }
+      .nakama img {
+        height: 150px;
+        width: 150px;
+        object-position: top;
+        object-fit: cover;
+        border-radius: 60%;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
+      }
+    </style>
+  </head>
+  <body>
+    <header class="header">
+      <img src="./images/one-piece-luffy.webp" alt="Luffy" />
+      <div>
+        <h1>Monkey D. Luffy</h1>
+        <p>"Próximo Rey de los Piratas"</p>
+      </div>
+    </header>
+
+    <section class="hi-text">
+      <p>
+        ¡Hey, soy Monkey D. Luffy! <br />
+        Soy el capitán de los Piratas del Sombrero de Paja y mi sueño es
+        convertirme en el Rey de los Piratas ⚓☠️ <br />
+        No me importa lo difícil que sea el camino, siempre seguiré adelante con
+        una sonrisa.<br />
+        Amo las aventuras, pelear contra oponentes fuertes y, sobre todo, ¡comer
+        mucha carne! 🍖🔥 <br />
+        No importa qué pase, nunca abandono a mis amigos. <br />
+        ¡El mundo es demasiado grande para quedarse quieto, así que vamos a
+        zarpar!
+      </p>
+    </section>
+
+    <section class="hobbies-container">
+      <div class="hobby">
+        <h2>Comer 🍖</h2>
+        <img src="./images/comiendo.jpg" alt="Luffy comiendo" width="100%" />
+      </div>
+      <div class="hobby">
+        <h2>Pelear 🥊</h2>
+        <img src="./images/peleando.jpg" alt="Luffy peleando" width="100%" />
+      </div>
+      <div class="hobby">
+        <h2>Aventuras ⛵</h2>
+        <img
+          src="./images/aventuras.webp"
+          alt="Luffy buscando aventuras"
+          width="100%"
+        />
+      </div>
+    </section>
+
+    <section class="straw-hat-pirates">
+      <article>
+        <p>
+          Estos son mis nakamas que forman la tripulación del Sombrero de Paja:
+        </p>
+      </article>
+      <article class="nakamas-container">
+        <div class="nakama">
+          <img src="./images/zorro.webp" alt="Zorro" />
+          <h3>Zorro</h3>
+        </div>
+        <div class="nakama">
+          <img src="./images/nami.webp" alt="Nami" />
+          <h3>Nami</h3>
+        </div>
+        <div class="nakama">
+          <img src="./images/usopp.webp" alt="Usopp" />
+          <h3>Usopp</h3>
+        </div>
+        <div class="nakama">
+          <img src="./images/sanji.webp" alt="Sanji" />
+          <h3>Sanji</h3>
+        </div>
+        <div class="nakama">
+          <img src="./images/chopper.webp" alt="Chopper" />
+          <h3>Chopper</h3>
+        </div>
+        <div class="nakama">
+          <img src="./images/robin.webp" alt="Robin" />
+          <h3>Robin</h3>
+        </div>
+        <div class="nakama">
+          <img src="./images/franky.webp" alt="Franky" />
+          <h3>Franky</h3>
+        </div>
+        <div class="nakama">
+          <img src="./images/brook.webp" alt="Brook" />
+          <h3>Brook</h3>
+        </div>
+        <div class="nakama">
+          <img src="./images/jimbe.webp" alt="Jimbe" />
+          <h3>Jimbe</h3>
+        </div>
+      </article>
+    </section>
+  </body>
+</html>
