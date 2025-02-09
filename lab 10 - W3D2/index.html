@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Personajes favoritos</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      @font-face {
+        font-family: "ONE PIECE";
+        src: url("../assets/fonts/one piece font.ttf") format("truetype");
+      }
+
+      :root {
+        --card-height: 300px;
+        --card-width: calc(var(--card-height) / 1.5);
+      }
+
+      *,
+      html,
+      body {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: "ONE PIECE", sans-serif;
+        text-align: center;
+      }
+
+      body {
+        background-color: rgba(187, 219, 211, 0.616);
+      }
+
+      .header {
+        display: flex;
+        justify-content: center; /* Centra horizontalmente */
+        align-items: center; /* Centra verticalmente */
+        height: 250px;
+        background: linear-gradient(
+          90deg,
+          rgba(195, 46, 27, 1) 0%,
+          rgba(105, 5, 0, 1) 50%,
+          rgba(255, 0, 31, 1) 100%
+        );
+        color: white;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
+        margin-bottom: 100px;
+      }
+
+      .header img {
+        max-width: 100%;
+        height: auto;
+        max-height: 80%;
+      }
+
+      .cards-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 70px;
+        flex-wrap: wrap;
+        margin: 10px;
+        margin-bottom: 50px;
+      }
+
+      .card {
+        width: var(--card-width);
+        height: var(--card-height);
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: flex-end;
+        padding: 0 36px;
+        perspective: 2500px;
+        margin: 0 50px;
+      }
+
+      .character-skull {
+        transition: all 0.5s;
+        position: absolute;
+        width: 100%;
+        z-index: -1;
+        border-radius: 2%;
+      }
+
+      .card:hover .character-skull {
+        transform: perspective(900px) translateY(-5%) rotateX(25deg)
+          translateZ(0);
+        box-shadow: 2px 35px 32px -8px rgba(0, 0, 0, 0.75);
+        -webkit-box-shadow: 2px 35px 32px -8px rgba(0, 0, 0, 0.75);
+        -moz-box-shadow: 2px 35px 32px -8px rgba(0, 0, 0, 0.75);
+      }
+
+      .character-skull::before,
+      .character-skull::after {
+        content: "";
+        opacity: 0;
+        width: 100%;
+        height: 80px;
+        transition: all 0.5s;
+        position: absolute;
+        left: 0;
+      }
+
+      .character-skull::before {
+        top: 0;
+        height: 100%;
+        background-image: linear-gradient(
+          to top,
+          transparent 46%,
+          rgba(12, 13, 19, 0.5) 68%,
+          rgba(12, 13, 19) 97%
+        );
+      }
+
+      .character-skull::after {
+        bottom: 0;
+        opacity: 1;
+        background-image: linear-gradient(
+          to bottom,
+          transparent 46%,
+          rgba(12, 13, 19, 0.5) 68%,
+          rgba(12, 13, 19) 97%
+        );
+      }
+
+      .title {
+        transition: transform 0.5s;
+        color: beige;
+        -webkit-text-stroke: 0.1px black;
+        font-weight: 900;
+        font-size: 4rem;
+      }
+
+      .card:hover .title {
+        transform: translate3d(0%, -50px, 100px);
+      }
+
+      .character-in-fight {
+        width: 150%;
+        opacity: 0;
+        transition: all 0.5s;
+        position: absolute;
+        z-index: -1;
+      }
+
+      .card:hover .character-in-fight {
+        opacity: 1;
+        transform: translate3d(0%, -30%, 100px);
+      }
+    </style>
+  </head>
+  <body>
+    <header class="header">
+      <img src="./images/logo.png" alt="One Piece" />
+    </header>
+
+    <section class="cards-container">
+      <div class="card">
+        <img
+          class="character-skull"
+          src="./images/carta-1/luffy-carta.jpg"
+          alt="Luffy skull"
+        />
+        <p class="title">Luffy</p>
+        <img
+          class="character-in-fight"
+          src="./images/carta-2/luffy.png"
+          alt="Luffy in fight"
+        />
+      </div>
+
+      <div class="card">
+        <img
+          class="character-skull"
+          src="./images/carta-1/zoro-carta.jpg"
+          alt="Zoro skull"
+        />
+        <p class="title">Zoro</p>
+        <img
+          class="character-in-fight"
+          src="./images/carta-2/zoro.png"
+          alt="Zoro in fight"
+        />
+      </div>
+
+      <div class="card">
+        <img
+          class="character-skull"
+          src="./images/carta-1/nami-carta.jpg"
+          alt="Nami skull"
+        />
+        <p class="title">Nami</p>
+        <img
+          class="character-in-fight"
+          src="./images/carta-2/nami.png"
+          alt="Nami in fight"
+        />
+      </div>
+
+      <div class="card">
+        <img
+          class="character-skull"
+          src="./images/carta-1/usopp-carta.jpg"
+          alt="Usopp skull"
+        />
+        <p class="title">Usopp</p>
+        <img
+          class="character-in-fight"
+          src="./images/carta-2/usopp.png"
+          alt="Usopp in fight"
+        />
+      </div>
+
+      <div class="card">
+        <img
+          class="character-skull"
+          src="./images/carta-1/sanji-carta.jpg"
+          alt="Sanji skull"
+        />
+        <p class="title">Sanji</p>
+        <img
+          class="character-in-fight"
+          src="./images/carta-2/sanji.png"
+          alt="Sanji in fight"
+        />
+      </div>
+
+      <div class="card">
+        <img
+          class="character-skull"
+          src="./images/carta-1/chopper-carta.jpg"
+          alt="Chopper skull"
+        />
+        <p class="title">Chopper</p>
+        <img
+          class="character-in-fight"
+          src="./images/carta-2/chopper.png"
+          alt="Chopper in fight"
+        />
+      </div>
+
+      <div class="card">
+        <img
+          class="character-skull"
+          src="./images/carta-1/robin-carta.jpg"
+          alt="Robin skull"
+        />
+        <p class="title">Robin</p>
+        <img
+          class="character-in-fight"
+          src="./images/carta-2/robin.png"
+          alt="Robin in fight"
+        />
+      </div>
+
+      <div class="card">
+        <img
+          class="character-skull"
+          src="./images/carta-1/franky-carta.jpg"
+          alt="Franky skull"
+        />
+        <p class="title">Franky</p>
+        <img
+          class="character-in-fight"
+          src="./images/carta-2/franky.png"
+          alt="Franky in fight"
+        />
+      </div>
+
+      <div class="card">
+        <img
+          class="character-skull"
+          src="./images/carta-1/brook-carta.jpg"
+          alt="Brook skull"
+        />
+        <p class="title">Brook</p>
+        <img
+          class="character-in-fight"
+          src="./images/carta-2/brook.png"
+          alt="Brook in fight"
+        />
+      </div>
+
+      <div class="card">
+        <img
+          class="character-skull"
+          src="./images/carta-1/jinbe-carta.jpg"
+          alt="Jinbe skull"
+        />
+        <p class="title">Jinbe</p>
+        <img
+          class="character-in-fight"
+          src="./images/carta-2/jinbe.png"
+          alt="Jinbe in fight"
+        />
+      </div>
+    </section>
+  </body>
+</html>
