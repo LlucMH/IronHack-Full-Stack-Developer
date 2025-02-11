@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Realizar pedido</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <header></header>
+    <main class="main">
+      <h1>Opciones de compra</h1>
+
+      <h2>Haz tu pedido de pizzas</h2>
+
+      <div class="container">
+        <form action="recibido.html" method="GET">
+          <div>
+            <label for="tratamiento">Tratamiento:</label>
+            <select id="tratamiento" name="tratamiento">
+              <option value="" disabled selected>Selecciona una opción</option>
+              <option value="sr">Sr.</option>
+              <option value="sra">Sra.</option>
+              <option value="otre">Otre</option>
+            </select>
+          </div>
+
+          <div>
+            <label for="nombre">Nombre completo:</label>
+            <input
+              type="text"
+              id="nombre"
+              name="nombre"
+              placeholder="Nombre y apellidos"
+              required
+            />
+          </div>
+
+          <div>
+            <label for="telefono">Teléfono:</label>
+            <input
+              type="tel"
+              id="telefono"
+              name="telefono"
+              min="18"
+              placeholder="123456789"
+              required
+            />
+          </div>
+
+          <div>
+            <label for="pizza">Elige tu pizza:</label>
+            <select id="pizza" name="pizza">
+              <option value="" disabled selected>Selecciona una pizza</option>
+              <option value="margarita">Margarita</option>
+              <option value="4-quesos">Cuatro quesos</option>
+              <option value="vegetal">Vegetal</option>
+              <option value="barbacoa">Barbacoa</option>
+              <option value="pepperoni">Pepperoni</option>
+              <option value="calzone">Calzone</option>
+            </select>
+          </div>
+
+          <div>
+            <label>Ingredientes extra:</label>
+            <div class="checkbox-group">
+              <label class="extra"
+                ><input
+                  type="checkbox"
+                  name="extra[]"
+                  value="Champiñón"
+                />Champiñón</label
+              >
+              <label class="extra"
+                ><input
+                  type="checkbox"
+                  name="extra[]"
+                  value="Jamón"
+                />Jamón</label
+              >
+              <label class="extra"
+                ><input
+                  type="checkbox"
+                  name="extra[]"
+                  value="Tomate natural"
+                />Tomate natural</label
+              >
+              <label class="extra"
+                ><input
+                  type="checkbox"
+                  name="extra[]"
+                  value="Pimiento"
+                />Pimiento</label
+              >
+            </div>
+          </div>
+
+          <div>
+            <label>¿Cómo quieres recibir tu pizza?</label>
+            <div class="radio-group">
+              <label class="formato"
+                ><input
+                  type="radio"
+                  name="formato"
+                  value="casa"
+                  checked
+                />Enviar a casa</label
+              >
+              <label class="formato"
+                ><input type="radio" name="formato" value="recoger" />Recoger en
+                el local</label
+              >
+            </div>
+          </div>
+
+          <div>
+            <label for="comentario">Comentario:</label>
+            <textarea
+              id="comentario"
+              name="comentario"
+              maxlength="150"
+              placeholder="Escribe aquí tu comentario."
+            ></textarea>
+          </div>
+
+          <!-- Input oculto-->
+          <input type="hidden" name="origen" value="formularioVideoclub" />
+
+          <!-- Botón de envío -->
+          <button type="submit">Enviar</button>
+        </form>
+      </div>
+    </main>
+  </body>
+</html>
