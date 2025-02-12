@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Anuncio de ropa</title>
+    <style>
+      *,
+      html,
+      body {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: Arial, sans-serif;
+      }
+
+      body {
+        background-image: url("./images/fondo.jpg");
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-attachment: fixed;
+        background-size: cover;
+        height: 100vh;
+      }
+
+      header {
+        margin: 50px;
+        height: 200px;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        gap: 30%;
+        padding: 10px 30% 10px 10px;
+      }
+
+      .logo {
+        height: 200px;
+        animation: hu__hu__ 2s ease-in-out infinite;
+        animation-delay: 1s;
+      }
+
+      .texto {
+        color: azure;
+        animation: leDanceInTop 2s ease-in-out;
+      }
+
+      .texto h1 {
+        font-size: 3rem;
+        padding: 0.5rem;
+      }
+
+      .texto h2 {
+        font-size: 1.5rem;
+        padding: 0.5rem;
+      }
+
+      .carrusel {
+        padding: 300px 0px;
+        display: flex;
+        animation: moverCarrusel 15s linear infinite;
+        gap: 50px;
+      }
+
+      .prenda {
+        width: 250px;
+        height: 350px;
+        margin-right: 15px;
+        background-color: transparent;
+        border-radius: 8px;
+        background-size: cover;
+        background-position: center;
+        background-size: contain;
+        background-repeat: no-repeat;
+      }
+
+      @keyframes moverCarrusel {
+        0% {
+          transform: translateX(100%);
+        }
+        100% {
+          transform: translateX(-100%);
+        }
+      }
+
+      @keyframes hu__hu__ {
+        50% {
+          transform: translateY(30px);
+        }
+      }
+
+      @keyframes leDanceInTop {
+        from {
+          opacity: 0;
+        }
+        16% {
+          transform: skew(-14deg);
+        }
+        33% {
+          transform: skew(12deg);
+        }
+        49% {
+          transform: skew(-8deg);
+        }
+        66% {
+          transform: skew(6deg);
+        }
+        83% {
+          transform: skew(-4deg);
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <img class="logo" src="./images/logo.png" alt="logo" />
+      <section class="texto">
+        <h1>OK Moda</h1>
+        <h2>Viste con estilo</h2>
+      </section>
+    </header>
+    <main class="main">
+      <section class="carrusel">
+        <div
+          class="prenda"
+          id="abrigo"
+          style="background-image: url('./images/abrigo.png')"
+        ></div>
+        <div
+          class="prenda"
+          id="botas"
+          style="background-image: url('./images/botas.png')"
+        ></div>
+        <div
+          class="prenda"
+          id="calcetines"
+          style="background-image: url('./images/calcetines.png')"
+        ></div>
+        <div
+          class="prenda"
+          id="pantalon"
+          style="background-image: url('./images/pantalon.png')"
+        ></div>
+        <div
+          class="prenda"
+          id="sombrero"
+          style="background-image: url('./images/sombrero.png')"
+        ></div>
+      </section>
+    </main>
+  </body>
+</html>
