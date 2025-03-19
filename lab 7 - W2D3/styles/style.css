@@ -54,15 +54,15 @@ header {
 
 .body_container {
   display: grid;
-  grid-template-columns: 2fr 1fr; /* El main ocupa 2/3 del espacio y el aside 1/3 */
+  grid-template-columns: 2fr 1fr; 
   gap: 0px;
-  grid-template-rows: auto; /* Las filas se ajustan al contenido */
+  grid-template-rows: auto; 
   grid-template-areas:
     "header header"
     "hero hero"
     "submenu submenu"
     "main aside"
-    "footer footer"; /* Define las áreas de grid */
+    "footer footer"; 
 }
 
 aside {
@@ -84,7 +84,7 @@ main {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  background-color: #3b3b3b; /* por si falla la carga de la imagen */
+  background-color: #3b3b3b;
   height: 22rem;
   justify-content: center;
   align-items: center;
@@ -272,7 +272,7 @@ footer {
   padding: 30px;
   padding-top: 120px;
   border-radius: 5px;
-  opacity: 0; /* El texto está oculto inicialmente */
+  opacity: 0; 
   transition: opacity 1.5s ease-out;
   top: 0;
   overflow-y: auto;
@@ -281,11 +281,11 @@ footer {
 }
 
 .member_card:hover .card_back {
-  opacity: 1; /* El texto se hace visible cuando el cursor pasa sobre la tarjeta */
+  opacity: 1; 
 }
 
 .member_card:hover .card_front img {
-  opacity: 0; /* La imagen desaparece al pasar el cursor */
+  opacity: 0; 
 }
 
 .aside_table {
@@ -400,7 +400,7 @@ footer {
 .video {
   margin-top: 20px;
   text-align: center;
-  display: none; /* Ocultamos el video inicialmente */
+  display: none; 
 }
 
 button {
