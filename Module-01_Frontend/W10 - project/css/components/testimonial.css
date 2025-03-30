@@ -1,0 +1,112 @@
+:root {
+  --emoji-size: clamp(64px, 10vw, 150px);
+  --profile-img-size: 50px;
+
+  --testimonial-height: 622px;
+}
+
+/* -------- MOBILE -------- */
+.testimonial {
+  margin: 4rem 0rem;
+  padding: var(--space-padding-y-mobile) var(--space-padding-x-wide);
+  width: 100vw;
+  background-color: var(--dark-grey);
+  background-image: url("/assets/images/testimonial-section/orbit.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  text-align: center;
+  height: var(--testimonial-height);
+  z-index: 0;
+}
+
+.testimonial-content {
+  padding: 6rem 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1.5rem;
+  height: 100%;
+  box-sizing: border-box;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.testimonial-face {
+  display: none;
+}
+
+.testimonial-profile-img {
+  height: var(--profile-img-size);
+  width: var(--profile-img-size);
+  border-radius: 50%;
+}
+
+.h3 {
+  color: var(--white-letter);
+}
+
+.testimonial-content-quote {
+  color: var(--yellow);
+}
+
+.caption-1 {
+  color: var(--soft-blue);
+}
+
+.caption-2 {
+  color: var(--white-letter);
+}
+
+.testimonial-profile {
+}
+
+/* -------- DESKTOP -------- */
+@media (min-width: 720px) {
+  .testimonial {
+    margin: 0 auto;
+    max-width: var(--container-max-width-wide);
+    padding: var(--space-padding-y-desktop) var(--space-padding-x-wide);
+  }
+
+  .testimonial {
+    position: relative;
+  }
+
+  .testimonial-face {
+    display: block;
+    height: var(--emoji-size);
+    width: var(--emoji-size);
+    position: absolute;
+    z-index: 100;
+  }
+
+  .testimonial-face-1 {
+    top: 5%;
+    left: 5%;
+  }
+
+  .testimonial-face-2 {
+    top: 5%;
+    right: 5%;
+  }
+
+  .testimonial-face-3 {
+    bottom: 5%;
+    left: 5%;
+  }
+
+  .testimonial-face-4 {
+    bottom: 5%;
+    right: 5%;
+  }
+}
+
+/* -------- ULTRAWIDE -------- */
+@media (min-width: 1100px) {
+  .testimonial {
+    padding: var(--space-padding-y-ultrawide) var(--space-padding-x-wide);
+    margin: 0 auto; /*cambiar si es necesario*/
+  }
+}
