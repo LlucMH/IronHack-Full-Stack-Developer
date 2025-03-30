@@ -8,6 +8,7 @@
 .hero-content {
   display: flex;
   flex-direction: column;
+  justify-content: center;
   gap: 1.5rem;
   text-align: left;
 }
@@ -61,44 +62,52 @@
     padding: var(--space-padding-y-desktop) var(--space-padding-x-desktop);
     display: flex;
     flex-direction: row;
+    justify-content: center;
+    gap: 1%;
   }
 
   .hero-content {
-    background-color: aqua;
+    display: flex;
+    justify-content: center;
+    padding-top: 3rem;
+    width: 50vw;
   }
 
   .hero-images-container {
-    background-image: url("/assets/images/hero-section/hero-image.png");
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: center;
-
-    background-color: blueviolet;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(3, 1fr);
-    gap: 1rem;
-    min-height: auto;
+    position: relative;
+    width: 53vw;
+    height: 570px;
   }
 
   .hero-image {
-    display: none;
-    height: 0px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    z-index: 0;
   }
 
   .hero-card {
     display: block;
-    width: 100%;
+    position: absolute;
+    width: 25vw;
+    height: auto;
+    object-fit: contain;
+    z-index: 100;
+    display: flex;
+    justify-content: end;
   }
 
   .hero-card-1 {
-    grid-column: 1;
-    grid-row: 1;
+    top: 0;
+    left: 0;
   }
 
   .hero-card-2 {
-    grid-column: 3;
-    grid-row: 3;
+    bottom: -10vw;
+    right: 0;
   }
 }
 
