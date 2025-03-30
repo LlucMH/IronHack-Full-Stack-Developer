@@ -1,0 +1,71 @@
+/* -------- MOBILE -------- */
+.clients {
+  margin: 4rem 0rem;
+  padding: var(--space-padding-y-mobile) var(--space-padding-x-mobile);
+}
+
+
+.clients-logos-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2.8rem;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  overflow: hidden;
+}
+
+.clients-logo {
+  max-height: 30px;
+  height: auto;
+  width: auto;
+  object-fit: contain;
+}
+
+@keyframes toColor {
+  from {
+    filter: grayscale(100%);
+  }
+  to {
+    filter: grayscale(0%);
+  }
+}
+
+@keyframes toGray {
+  from {
+    filter: grayscale(0%);
+  }
+  to {
+    filter: grayscale(100%);
+  }
+}
+
+.clients-logo {
+  filter: grayscale(100%);
+  animation: toGray 0.3s forwards;
+}
+
+.clients-logo:hover {
+  animation: toColor 0.3s forwards;
+}
+
+/* -------- DESKTOP -------- */
+@media (min-width: 720px) {
+  .clients {
+    max-width: var(--container-max-width-default);
+    padding: var(--space-padding-y-desktop) var(--space-padding-x-desktop);
+    margin: 4rem auto;
+  }
+
+  .clients-logos-container {
+    justify-content: space-between;
+  }
+}
+
+/* -------- ULTRAWIDE -------- */
+@media (min-width: 1100px) {
+  .clients {
+    padding: var(--space-padding-y-ultrawide) var(--space-padding-x-ultrawide);
+    margin: 4rem auto;
+  }
+}
