@@ -1,15 +1,44 @@
 <header class="header">
-  <img src="./assets/images/logos/circle.svg" alt="Logo" class="header-logo" />
+  <section class="header-container">
+    <article class="header-mobile">
+      <img
+        src="./assets/images/logos/circle.svg"
+        alt="Logo"
+        class="header-logo"
+      />
+      <button class="header-toggle" aria-label="Toggle navigation">☰</button>
+    </article>
 
-  <nav class="header-nav">
-    <ul class="header-nav-list">
-      <li class="header-nav-list-item"><a href="#home">Home</a></li>
-      <li class="header-nav-list-item"><a href="#projects">Projects</a></li>
-      <li class="header-nav-list-item"><a href="#services">Services</a></li>
-    </ul>
-  </nav>
+    <article class="header-menu">
+      <nav class="header-nav">
+        <ul class="header-nav-list">
+          <li>
+            <button
+              class="header-button-mobile button-hidden blue-button headline-medium"
+            ></button>
+          </li>
+          <li class="header-nav-list-item headline-medium">
+            <a href="#home">Home</a>
+          </li>
+          <li class="header-nav-list-item headline-medium">
+            <a href="#projects">Projects</a>
+          </li>
+          <li class="header-nav-list-item headline-medium">
+            <a href="#services">Services</a>
+          </li>
+          <li>
+            <button class="header-button-mobile blue-button headline-medium">
+              Contact Us
+            </button>
+          </li>
+        </ul>
+      </nav>
+    </article>
 
-  <button class="header-button blue-button">Contact Us</button>
-
-  <button class="header-toggle" aria-label="Toggle navigation">☰</button>
+    <article class="header-button-container">
+      <button class="header-button-desktop blue-button headline-medium">
+        Contact Us
+      </button>
+    </article>
+  </section>
 </header>
