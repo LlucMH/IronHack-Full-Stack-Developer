@@ -13,10 +13,10 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  padding: 2rem 1rem; /* o usa tus variables */
+  padding: 2rem 1rem;
   text-align: center;
   height: var(--newsletter-height);
-  gap: 1rem; /* espaciado entre título, texto y formulario */
+  gap: 1rem; 
 }
 
 .newsletter-title {
@@ -34,8 +34,8 @@
   flex: 1;
   text-align: center;
   align-content: center;
-  justify-content: center; /* 👈 Esto centra horizontalmente */
-  align-items: center;     /* 👈 Esto centra verticalmente en la fila */
+  justify-content: center;
+  align-items: center; 
   text-align: center;
   flex-wrap: wrap;
   gap: 1rem;
