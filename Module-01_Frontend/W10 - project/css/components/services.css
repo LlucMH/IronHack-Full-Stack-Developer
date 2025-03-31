@@ -19,7 +19,7 @@
 }
 
 .services-card {
-  background-color: white;
+  background-color: var(--white);
   padding: 2rem;
   width: 100%;
   max-width: var(--card-width-max);

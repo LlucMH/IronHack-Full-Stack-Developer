@@ -1,6 +1,8 @@
 :root {
   --newsletter-height: 500px;
   --input-for-width: 393px;
+  --icon-height: 30px;
+  --icon-width: 30px;
 }
 
 /* -------- MOBILE -------- */
@@ -16,7 +18,7 @@
   padding: 2rem 1rem;
   text-align: center;
   height: var(--newsletter-height);
-  gap: 1rem; 
+  gap: 1rem;
 }
 
 .newsletter-title {
@@ -31,32 +33,30 @@
 .newsletter-form-container {
   display: flex;
   flex-direction: row;
-  flex: 1;
-  text-align: center;
   align-content: center;
   justify-content: center;
-  align-items: center; 
-  text-align: center;
   flex-wrap: wrap;
-  gap: 1rem;
+  gap: 1.5rem;
 }
 
 .newsletter-input-wrapper {
   display: flex;
   align-items: center;
+  justify-content: center;
   gap: 0.75rem;
   padding: 0.5rem 1rem;
   border: 1px solid var(--soft-blue);
-  background-color: white;
+  background-color: var(--white);
   max-width: 400px;
   width: 100%;
   height: var(--button-height-big);
   width: var(--input-for-width);
+  max-width: 80%;
 }
 
 .newsletter-input-icon {
-  width: 30px;
-  height: 30px;
+  width: var(--icon-width);
+  height: var(--icon-height);
   flex-shrink: 0;
 }
 
@@ -82,6 +82,5 @@
 @media (min-width: 1100px) {
   .testimonial {
     padding: var(--space-padding-y-ultrawide) var(--space-padding-x-wide);
-    margin: 0 auto;
   }
 }
