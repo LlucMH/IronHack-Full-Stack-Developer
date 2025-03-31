@@ -1,0 +1,21 @@
+/* -------- MOBILE -------- */
+.contact {
+  margin: 4rem 0rem;
+  padding: var(--space-padding-y-mobile) var(--space-padding-x-mobile);
+}
+
+/* -------- DESKTOP -------- */
+@media (min-width: 720px) {
+  .contact {
+    max-width: var(--container-max-width-default);
+    padding: var(--space-padding-y-desktop) var(--space-padding-x-desktop);
+  }
+}
+
+/* -------- ULTRAWIDE -------- */
+@media (min-width: 1100px) {
+  .contact {
+    padding: var(--space-padding-y-ultrawide) var(--space-padding-x-ultrawide);
+    margin: 0 auto; /*cambiar si es necesario*/
+  }
+}

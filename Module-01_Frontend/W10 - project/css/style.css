@@ -1,6 +1,7 @@
 @import "_colors.css";
 @import "_fonts.css";
 @import "_typography.css";
+@import "_spacing.css";
 
 *,
 html,
@@ -32,22 +33,37 @@ h4 {
   color: var(--medium-grey);
 }
 
-.container-wide {
-  max-width: 1320px;
-}
-
-.container-narrow {
-  max-width: 1100px;
-}
-
 .blue-button {
   background-color: var(--dark-blue);
   color: var(--white-letter);
   cursor: pointer;
   text-decoration: none;
   transition: color 0.2s, text-decoration 0.2s;
+  width: var(--button-width-default);
+  height: var(--button-height-default);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  border: none;
 }
 
-.blue-button:hover {
+.blue-button-big {
+  background-color: var(--dark-blue);
+  color: var(--white-letter);
+  cursor: pointer;
+  text-decoration: none;
+  transition: color 0.2s, text-decoration 0.2s;
+  width: var(--button-width-big);
+  height: var(--button-height-big);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  border: none;
+}
+
+.blue-button:hover,
+.blue-button-big:hover {
   color: var(--yellow);
 }

@@ -1,0 +1,87 @@
+:root {
+  --newsletter-height: 500px;
+  --input-for-width: 393px;
+}
+
+/* -------- MOBILE -------- */
+.newsletter {
+  margin: 4rem 0rem;
+  padding: var(--space-padding-y-mobile) var(--space-padding-x-mobile);
+  width: 100vw;
+  background-color: var(--yellow);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem 1rem; /* o usa tus variables */
+  text-align: center;
+  height: var(--newsletter-height);
+  gap: 1rem; /* espaciado entre título, texto y formulario */
+}
+
+.newsletter-title {
+  margin-bottom: 0.25rem;
+}
+
+.newsletter-text {
+  margin-bottom: 1.5rem;
+  color: var(--dark-grey);
+}
+
+.newsletter-form-container {
+  display: flex;
+  flex-direction: row;
+  flex: 1;
+  text-align: center;
+  align-content: center;
+  justify-content: center; /* 👈 Esto centra horizontalmente */
+  align-items: center;     /* 👈 Esto centra verticalmente en la fila */
+  text-align: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.newsletter-input-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  padding: 0.5rem 1rem;
+  border: 1px solid var(--soft-blue);
+  background-color: white;
+  max-width: 400px;
+  width: 100%;
+  height: var(--button-height-big);
+  width: var(--input-for-width);
+}
+
+.newsletter-input-icon {
+  width: 30px;
+  height: 30px;
+  flex-shrink: 0;
+}
+
+.newsletter-input-wrapper input {
+  border: none;
+  outline: none;
+  flex: 1;
+  background: transparent;
+  color: var(--dark-grey);
+  width: var(--input-for-width);
+}
+
+/* -------- DESKTOP -------- */
+@media (min-width: 720px) {
+  .newsletter {
+    margin: 0 auto;
+    max-width: var(--container-max-width-wide);
+    padding: var(--space-padding-y-desktop) var(--space-padding-x-desktop);
+  }
+}
+
+/* -------- ULTRAWIDE -------- */
+@media (min-width: 1100px) {
+  .testimonial {
+    padding: var(--space-padding-y-ultrawide) var(--space-padding-x-wide);
+    margin: 0 auto;
+  }
+}

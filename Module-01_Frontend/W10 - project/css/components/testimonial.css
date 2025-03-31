@@ -109,6 +109,55 @@
     bottom: 5%;
     right: 5%;
   }
+
+  .testimonial-face-2 {
+    transition: transform 0.6s ease;
+    transform-style: preserve-3d;
+  }
+  
+  .testimonial-face-2:hover {
+    transform: rotateY(-180deg);
+  }
+
+  .testimonial-face-1,
+  .testimonial-face-3 {
+    transition: transform 0.3s ease;
+  }
+  
+  .testimonial-face-1:hover,
+  .testimonial-face-3:hover {
+    animation: spinY-CW 1s linear infinite;
+  }
+
+  .testimonial-face-2,
+  .testimonial-face-4 {
+    transition: transform 0.3s ease;
+  }
+  
+  .testimonial-face-2:hover,
+  .testimonial-face-4:hover {
+    animation: spinY-CCW 1s linear infinite;
+  }
+  
+  @keyframes spinY-CW {
+    from {
+      transform: rotateY(0deg);
+    }
+    to {
+      transform: rotateY(360deg);
+    }
+  }
+
+  @keyframes spinY-CCW {
+    from {
+      transform: rotateY(0deg);
+    }
+    to {
+      transform: rotateY(-360deg);
+    }
+  }
+  
+  
 }
 
 /* -------- ULTRAWIDE -------- */

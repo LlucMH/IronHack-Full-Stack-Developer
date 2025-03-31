@@ -1,0 +1,28 @@
+:root {
+  /* Spacing */
+  --space-padding-y-mobile: 4rem; /* vertical padding */
+  --space-padding-x-mobile: 3rem; /* horizontal padding */
+
+  --space-padding-y-desktop: 1%; /* vertical padding */
+  --space-padding-x-desktop: 2%; /* horizontal padding */
+
+  --space-padding-y-ultrawide: 3%; /* vertical padding */
+  --space-padding-x-ultrawide: 0%; /* horizontal padding */
+
+  --space-padding-x-wide: 0px; /* horizontal padding */
+
+  /* Sizes */
+  --container-max-width-default: 1100px;
+  --container-max-width-wide: 1320px;
+
+  --card-width-min: 340px;
+  --card-width-max: 1000px;
+  --card-height-max: 340px;
+  --card-height-min: 380px;
+
+  /* Buttons sizes */
+  --button-height-default: 52px;
+  --button-width-default: 150px;
+  --button-height-big: 80px;
+  --button-width-big: 198px;
+}

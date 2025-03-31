@@ -1,6 +1,6 @@
 /* -------- MOBILE -------- */
 .hero {
-  padding: var(--space-padding-y-mobile) var(--space-padding-x-mobile);
+  padding: 2rem var(--space-padding-x-mobile);
   display: flex;
   flex-direction: column;
 }
@@ -11,6 +11,7 @@
   justify-content: center;
   gap: 2rem;
   text-align: left;
+  padding-bottom: 3rem;
 }
 
 .hero-buttons-container {
@@ -52,7 +53,6 @@
 
 .hero-card {
   display: none;
-  height: 0px;
 }
 
 /* -------- DESKTOP -------- */
@@ -106,7 +106,7 @@
   }
 
   .hero-card-2 {
-    bottom: -10vw;
+    bottom: -5vw;
     right: 0;
   }
 }
