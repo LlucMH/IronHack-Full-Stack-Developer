@@ -18,6 +18,18 @@ components.forEach(async (item) => {
 
       import(headerScript);
     }
+
+    if (name === "component-project-details") {
+      import("/js/components/event404.js");
+    }
+
+    if (name === "component-other-projects") {
+      import("/js/components/projectCard.js");
+    }
+
+    if (name === "component-project-details") {
+      import("/js/components/projectDetails.js");
+    }
   } catch (err) {
     console.error(`Error cargando componente ${name}:`, err);
     item.innerHTML = `<p style="color:red;">Error cargando componente: ${name}</p>`;

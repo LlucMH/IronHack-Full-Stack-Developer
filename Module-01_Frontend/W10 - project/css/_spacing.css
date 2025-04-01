@@ -1,12 +1,12 @@
 :root {
   /* Spacing */
-  --space-padding-y-mobile: 4rem; /* vertical padding */
+  --space-padding-y-mobile: 1rem; /* vertical padding */
   --space-padding-x-mobile: 3rem; /* horizontal padding */
 
   --space-padding-y-desktop: 1%; /* vertical padding */
   --space-padding-x-desktop: 2%; /* horizontal padding */
 
-  --space-padding-y-ultrawide: 3%; /* vertical padding */
+  --space-padding-y-ultrawide: 3rem; /* vertical padding */
   --space-padding-x-ultrawide: 0%; /* horizontal padding */
 
   --space-padding-x-wide: 0px; /* horizontal padding */
