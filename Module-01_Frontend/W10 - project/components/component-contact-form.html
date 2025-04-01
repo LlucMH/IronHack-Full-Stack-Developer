@@ -1,58 +1,66 @@
 <section class="contact">
   <h1 class="contact-title">Contact Us</h1>
   <div class="contact-form-container">
-    <form id="contact-form" action="#" method="GET">
-      <div class="contact-form-field">
-        <label for="contact-form-name">Full Name *</label>
-        <input
-          type="text"
-          id="contact-form-name"
-          name="contact-form-name"
-          placeholder="Enter your full name"
-          required
-        />
+    <form id="contact-form" onsubmit="event404(event)" method="GET">
+      <div class="contact-form-inputs-container">
+        <div class="contact-form-field body-regular">
+          <label for="contact-form-name">Full Name *</label>
+          <input
+            type="text"
+            id="contact-form-name"
+            name="contact-form-name"
+            class="body-regular input-box input-box-large"
+            placeholder="Enter your full name"
+            required
+          />
+        </div>
+
+        <div class="form-row-2">
+          <div class="contact-form-field body-regular">
+            <label for="contact-form-email">Email</label>
+            <input
+              type="email"
+              id="contact-form-email"
+              name="contact-form-email"
+              class="body-regular input-box input-box-narrow"
+              placeholder="Enter your email address"
+              required
+            />
+          </div>
+
+          <div class="contact-form-field body-regular">
+            <label for="contact-form-phone">Phone</label>
+            <input
+              type="tel"
+              id="contact-form-phone"
+              name="contact-form-phone"
+              class="body-regular input-box input-box-narrow"
+              placeholder="Enter your phone number"
+              required
+            />
+          </div>
+        </div>
+
+        <div class="contact-form-field body-regular">
+          <label for="contact-form-message">Message</label>
+          <textarea
+            id="contact-form-message"
+            name="contact-form-message"
+            class="body-regular input-box input-box-large"
+            maxlength="300"
+            placeholder="Write your message here ..."
+            required
+          ></textarea>
+        </div>
+
+        <!-- Hidden input -->
+        <input type="hidden" name="origen" value="newsletter-form" />
+
+        <!-- Submit button -->
+        <button class="contact-form-button blue-button" type="submit">
+          Submit
+        </button>
       </div>
-
-      <div class="contact-form-field">
-        <label for="contact-form-email">Email</label>
-        <input
-          type="email"
-          id="contact-form-email"
-          name="contact-form-email"
-          placeholder="Enter your email address"
-          required
-        />
-      </div>
-
-      <div class="contact-form-field">
-        <label for="contact-form-phone">Phone</label>
-        <input
-          type="tel"
-          id="contact-form-phone"
-          name="contact-form-phone"
-          placeholder="Enter your phone number"
-          required
-        />
-      </div>
-
-      <div class="contact-form-field">
-        <label for="contact-form-message">Message</label>
-        <textarea
-          id="contact-form-message"
-          name="contact-form-message"
-          maxlength="300"
-          placeholder="Write your message here ..."
-          required
-        ></textarea>
-      </div>
-
-      <!-- Hidden input -->
-      <input type="hidden" name="origen" value="newsletter-form" />
-
-      <!-- Submit button -->
-      <button class="contact-form-button blue-button" type="submit">
-        Submit
-      </button>
     </form>
 
     <p

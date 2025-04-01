@@ -10,11 +10,10 @@ components.forEach(async (item) => {
 
     if (name === "component-header") {
       const currentPage = window.location.pathname;
-      const isHome =
-        currentPage === "/" || currentPage.endsWith("index.html");
+      const isHome = currentPage === "/" || currentPage.endsWith("index.html");
 
       const headerScript = isHome
-        ? "/components/header.js"
+        ? "./components/header.js"
         : "/js/components/header.js";
 
       import(headerScript);
