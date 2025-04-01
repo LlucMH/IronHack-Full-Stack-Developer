@@ -13,7 +13,8 @@
   gap: 4rem;
 }
 
-.project-card-container {
+.project-card-container,
+.project-card-container-bonus {
   display: flex;
   flex-direction: column;
   gap: 2rem;
@@ -42,6 +43,7 @@
   padding: 2rem;
 }
 
+.project-card-anchor,
 .project-card a {
   padding: 2rem;
 }
@@ -69,7 +71,8 @@
     padding: var(--space-padding-y-desktop) var(--space-padding-x-desktop);
   }
 
-  .project-card-container {
+  .project-card-container,
+  .project-card-container-bonus {
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;

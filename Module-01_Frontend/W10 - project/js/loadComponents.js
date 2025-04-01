@@ -20,6 +20,7 @@ components.forEach(async (item) => {
     }
 
     if (name === "component-project-details") {
+      import("/js/components/projectDetails.js");
       import("/js/components/event404.js");
     }
 
@@ -27,8 +28,15 @@ components.forEach(async (item) => {
       import("/js/components/projectCard.js");
     }
 
-    if (name === "component-project-details") {
-      import("/js/components/projectDetails.js");
+    /* --- BONUS --- */
+    if (name === "component-project-details-bonus") {
+      await import("/js/components/utilsBonus.js");
+      await import("/js/components/projectDetailsBonus.js");
+    }
+
+    if (name === "component-other-projects-bonus") {
+      await import("/js/components/utilsBonus.js");
+      await import("/js/components/projectCardBonus.js");
     }
   } catch (err) {
     console.error(`Error cargando componente ${name}:`, err);
