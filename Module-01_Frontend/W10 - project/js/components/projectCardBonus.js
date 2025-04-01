@@ -1,13 +1,16 @@
 import { getSelectedUUIDBonus } from "/js/components/utilsBonus.js";
 
+console.log("projectCardBonus.js loaded ✅");
+
 async function loadOtherProjectsBonus() {
   try {
+    console.log("Fetching projects from API");
     const res = await fetch(
       "https://raw.githubusercontent.com/ironhack-jc/mid-term-api/main/projects"
     );
     const projects = await res.json();
 
-    console.log("Projects obtenidos desde la API:", projects);
+    console.log("Projects fetched from the API", projects, " ✅");
 
     const container = document.querySelector(".project-card-container-bonus");
     if (!container) {
@@ -18,6 +21,8 @@ async function loadOtherProjectsBonus() {
     const currentUUID = getSelectedUUIDBonus();
     const filteredProjects = projects.filter((p) => p.uuid !== currentUUID);
     const selectedProjects = filteredProjects.slice(0, 3);
+
+    console.log(`Displaying ${selectedProjects.length} other projects`);
 
     selectedProjects.forEach((project) => {
       const card = document.createElement("div");
@@ -41,6 +46,8 @@ async function loadOtherProjectsBonus() {
 
       container.appendChild(card);
     });
+
+    console.log("Other project cards created successfully ✅");
   } catch (error) {
     console.error("Error loading other projects:", error);
   }

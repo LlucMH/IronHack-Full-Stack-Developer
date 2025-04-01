@@ -1,11 +1,15 @@
+console.log("projectDetails.js loaded ✅");
+
 async function loadProjectDetail() {
   try {
+    console.log("Fetching projects from API");
+
     const res = await fetch(
       "https://raw.githubusercontent.com/ironhack-jc/mid-term-api/main/projects"
     );
     const projects = await res.json();
 
-    console.log("Projects from API:", projects);
+    console.log("Projects from API:", projects, " ✅");
 
     const container = document.querySelector(".project-details");
     if (!container) {
@@ -34,7 +38,8 @@ async function loadProjectDetail() {
         </div>
       `;
 
-    container.appendChild(card);
+    container.appendChild(card); // Append to DOM
+    console.log("Project detail rendered successfully ✅");
   } catch (error) {
     console.error("Error loading project detail:", error);
   }

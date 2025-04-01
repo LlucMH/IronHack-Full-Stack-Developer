@@ -1,9 +1,9 @@
-console.log("✅ projectDetailsBonus.js cargado");
+console.log("projectDetailsBonus.js loaded ✅");
 
 import { getSelectedUUIDBonus } from "/js/components/utilsBonus.js";
 
 async function loadProjectDetailBonus() {
-  console.log("📦 Ejecutando loadProjectDetailBonus()");
+  console.log("Running loadProjectDetailBonus()");
 
   try {
     const res = await fetch(
@@ -16,7 +16,7 @@ async function loadProjectDetailBonus() {
       (project) => project.uuid === selectedUUID
     );
 
-    console.log("🎯 Proyecto seleccionado:", selectedProject);
+    console.log("Selected project:", selectedProject, " ✅");
 
     if (!selectedProject) {
       console.error(`Project with UUID ${selectedUUID} not found`);
@@ -30,6 +30,7 @@ async function loadProjectDetailBonus() {
     }
 
     const card = document.createElement("div");
+
     card.innerHTML = `
       <div class="project-details-container">
         <h1 class="project-name">${selectedProject.name}</h1>
@@ -41,7 +42,9 @@ async function loadProjectDetailBonus() {
         <p class="project-content body-regular">${selectedProject.content}</p>
       </div>
     `;
+
     container.appendChild(card);
+    console.log("Project detail rendered successfully ✅");
   } catch (error) {
     console.error("Error loading project detail:", error);
   }
