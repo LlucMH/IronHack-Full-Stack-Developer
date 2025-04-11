@@ -53,7 +53,7 @@
 
 ## 🌍 Deploying on Netlify
 
-This project is set up to be easily deployed on [Netlify](https://wondrous-malabi-bdb702.netlify.app):
+This project is set up to be easily deployed on [Netlify](earnest-horse-280491.netlify.app):
 
 1. Connect your Git repository.
 2. Set the build command: (none).
