@@ -1,10 +1,6 @@
-console.log("projectDetailsBonus.js loaded ✅");
-
 import { getSelectedUUIDBonus } from "/js/components/utilsBonus.js";
 
 async function loadProjectDetailBonus() {
-  console.log("Running loadProjectDetailBonus()");
-
   try {
     const res = await fetch(
       "https://raw.githubusercontent.com/ironhack-jc/mid-term-api/main/projects"
@@ -15,8 +11,6 @@ async function loadProjectDetailBonus() {
     const selectedProject = projects.find(
       (project) => project.uuid === selectedUUID
     );
-
-    console.log("Selected project:", selectedProject, " ✅");
 
     if (!selectedProject) {
       console.error(`Project with UUID ${selectedUUID} not found`);
@@ -44,7 +38,6 @@ async function loadProjectDetailBonus() {
     `;
 
     container.appendChild(card);
-    console.log("Project detail rendered successfully ✅");
   } catch (error) {
     console.error("Error loading project detail:", error);
   }

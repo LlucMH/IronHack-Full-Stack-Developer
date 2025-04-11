@@ -1,7 +1,8 @@
 <section class="newsletter">
   <h3 class="newsletter-title">Do you have any questions?</h3>
   <p class="newsletter-text body-regular">Let us help you!</p>
-  <form class="newsletter-form" onsubmit="event404(event)" method="GET">
+
+  <form id="newsletter-form" class="newsletter-form">
     <div class="newsletter-form-container">
       <!-- Label with icon -->
       <label
@@ -38,4 +39,13 @@
       </button>
     </div>
   </form>
+
+  <!-- Success message -->
+  <p
+    id="newsletter-success-message"
+    class="headline-medium body-regular hidden"
+    style="color: var(--dark-grey); margin-top: 1rem"
+  >
+    🥳 CONGRATULATIONS! YOU'RE SUBSCRIBED
+  </p>
 </section>

@@ -93,3 +93,7 @@ h4 {
 .blue-button-big:hover {
   color: var(--yellow);
 }
+
+.hidden {
+  display: none;
+}

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Newsletter Test</title>
+  <style>
+    body {
+      font-family: sans-serif;
+      padding: 2rem;
+    }
+
+    .hidden {
+      display: none;
+    }
+
+    .headline-medium {
+      font-size: 17px;
+      font-weight: 500;
+    }
+
+    .newsletter-form-button {
+      margin-top: 1rem;
+      padding: 0.5rem 1rem;
+    }
+  </style>
+</head>
+<body>
+
+
+    
+  <section class="newsletter">
+    <h3>Do you have any questions?</h3>
+    <p>Let us help you!</p>
+
+    <form id="newsletter-form" class="newsletter-form">
+      <input
+        type="email"
+        id="newsletter-email"
+        name="newsletter-email"
+        placeholder="Enter your email"
+        required
+      />
+      <button
+        class="newsletter-form-button headline-medium"
+        type="submit"
+      >
+        Subscribe
+      </button>
+    </form>
+
+    <p
+      id="newsletter-success-message"
+      class="headline-medium hidden"
+      style="color: green; margin-top: 1rem;"
+    >
+      🥳 CONGRATULATIONS! YOU'RE SUBSCRIBED
+    </p>
+  </section>
+
+
+
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      const form = document.getElementById("newsletter-form");
+      const message = document.getElementById("newsletter-success-message");
+
+      form.addEventListener("submit", function (e) {
+        e.preventDefault(); // ✅ Evita recarga
+
+        // Mostrar mensaje
+        message.classList.remove("hidden");
+
+        // Limpiar input
+        form.reset();
+      });
+    });
+  </script>
+</body>
+</html>

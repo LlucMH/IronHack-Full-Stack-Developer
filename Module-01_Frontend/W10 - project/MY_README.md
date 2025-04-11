@@ -4,7 +4,7 @@
 
 ## 🌐 Demo
 
-[🔗 Live Demo on Netlify](https://your-site.netlify.app) _(replace with your deployed URL)_
+[🔗 Live Demo on Netlify](https://your-site.netlify.app)
 
 ## 🧩 Key Features
 
@@ -53,7 +53,7 @@
 
 ## 🌍 Deploying on Netlify
 
-This project is set up to be easily deployed on [Netlify](https://www.netlify.com/):
+This project is set up to be easily deployed on [Netlify](https://wondrous-malabi-bdb702.netlify.app):
 
 1. Connect your Git repository.
 2. Set the build command: (none).
