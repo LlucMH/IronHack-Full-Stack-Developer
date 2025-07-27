@@ -17,6 +17,7 @@ public class ArrayParesImpares {
                 pares.add(num);
             } else {
                 impares.add(num);
+
             }
         }
 
