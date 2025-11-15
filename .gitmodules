@@ -13,3 +13,12 @@
 [submodule "Module-01_Frontend/W09D2 - lab 28 - promise me a diner/lab-es6-promises"]
 	path = Module-01_Frontend/W09D2 - lab 28 - promise me a diner/lab-es6-promises
 	url = https://github.com/LlucMH/lab-es6-promises.git
+[submodule "Module-02_Backend/W2 - homework - IronBattle/IronBattle"]
+	path = Module-02_Backend/W2 - homework - IronBattle/IronBattle
+	url = https://github.com/LlucMH/IronBattle.git
+[submodule "Module-02_Backend/W12 - project - bank back/project_bank_back"]
+	path = Module-02_Backend/W12 - project - bank back/project_bank_back
+	url = https://github.com/LlucMH/project_bank_back.git
+[submodule "Module-02_Backend/W6 - homework - IronSchool/IronSchool_Homework2"]
+	path = Module-02_Backend/W6 - homework - IronSchool/IronSchool_Homework2
+	url = https://github.com/ZiskaS/IronSchool_Homework2.git
