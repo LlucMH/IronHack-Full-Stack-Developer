@@ -28,7 +28,7 @@ Este módulo cubre todos los fundamentos esenciales del **desarrollo frontend mo
 ---
 
 ## ⭐ Proyecto Final – Frontend
-🔗 https://github.com/LlucMH/IronHack-Full-Stack-Developer/tree/main/Module-01_Frontend/W10%20-%20project
+🔗 [Proyecto Final](https://github.com/LlucMH/IronHack-Full-Stack-Developer/tree/main/Module-01_Frontend/W10%20-%20project)
 
 Incluye:
 - React + Hooks  

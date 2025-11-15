@@ -27,7 +27,7 @@ Este módulo introduce al desarrollo backend profesional mediante **Java + Sprin
 ---
 
 ## ⭐ Proyecto Final – Backend
-🔗 https://github.com/LlucMH/IronHack-Full-Stack-Developer/tree/main/Module-02_Backend/W12%20-%20project%20-%20bank%20back/project_bank_back
+🔗 [Proyecto Final](https://github.com/LlucMH/IronHack-Full-Stack-Developer/tree/main/Module-02_Backend/W12%20-%20project%20-%20bank%20back/project_bank_back)
 
 Incluye:
 - API REST completa  

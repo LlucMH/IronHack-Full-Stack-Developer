@@ -19,7 +19,7 @@ serverless y conexión entre frontend-backend**.
 ---
 
 ## ⭐ Proyecto Final – Full-Stack Final Project
-🔗 https://github.com/LlucMH/IronHack-Full-Stack-Developer/tree/main/Module-03_Deployment/W4%20-%20proyecto
+🔗 [Proyecto Final](https://github.com/LlucMH/IronHack-Full-Stack-Developer/tree/main/Module-03_Deployment/W4%20-%20proyecto)
 
 ### Tecnologías
 - **Frontend:** React, Tailwind, Vite  
