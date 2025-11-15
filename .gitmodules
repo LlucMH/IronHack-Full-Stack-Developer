@@ -22,3 +22,6 @@
 [submodule "Module-02_Backend/W6 - homework - IronSchool/IronSchool_Homework2"]
 	path = Module-02_Backend/W6 - homework - IronSchool/IronSchool_Homework2
 	url = https://github.com/ZiskaS/IronSchool_Homework2.git
+[submodule "Module-03_Deployment/W4 - proyecto/project_module_3"]
+	path = Module-03_Deployment/W4 - proyecto/project_module_3
+	url = https://github.com/LlucMH/project_module_3.git
