@@ -1,0 +1,15 @@
+[submodule "Module-01_Frontend/W06D1 - lab 23 - functions and arrays/lab-javascript-functions-and-arrays"]
+	path = Module-01_Frontend/W06D1 - lab 23 - functions and arrays/lab-javascript-functions-and-arrays
+	url = https://github.com/LlucMH/lab-javascript-functions-and-arrays.git
+[submodule "Module-01_Frontend/W06D2 - lab 24 - greatest movies of all times/lab-javascript-greatest-movies"]
+	path = Module-01_Frontend/W06D2 - lab 24 - greatest movies of all times/lab-javascript-greatest-movies
+	url = https://github.com/LlucMH/lab-javascript-greatest-movies.git
+[submodule "Module-01_Frontend/W07D3 - lab 25 - ironhack cart/lab-dom-ironhack-cart"]
+	path = Module-01_Frontend/W07D3 - lab 25 - ironhack cart/lab-dom-ironhack-cart
+	url = https://github.com/LlucMH/lab-dom-ironhack-cart.git
+[submodule "Module-01_Frontend/W09D1 - lab 27 - js iron chronometer/lab-javascript-chronometer"]
+	path = Module-01_Frontend/W09D1 - lab 27 - js iron chronometer/lab-javascript-chronometer
+	url = https://github.com/LlucMH/lab-javascript-chronometer.git
+[submodule "Module-01_Frontend/W09D2 - lab 28 - promise me a diner/lab-es6-promises"]
+	path = Module-01_Frontend/W09D2 - lab 28 - promise me a diner/lab-es6-promises
+	url = https://github.com/LlucMH/lab-es6-promises.git
